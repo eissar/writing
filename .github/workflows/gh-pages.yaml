@@ -1,4 +1,4 @@
-name: 🏗️ Build and Deploy GitHub Pages
+name: Build and Deploy GitHub Pages
 
 on:
   push:
@@ -9,11 +9,14 @@ jobs:
   deploy:
     runs-on: ubuntu-22.04
     steps:
-      - name: 🔄 Check Out Source Repository
+      - name: Check Out Source Repository
         uses: actions/checkout@v3.5.1
         with:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Recursively Update Submodules
+        run: git submodule update --init --recursive
 
       - name: Initialize Hugo Environment
         uses: peaceiris/actions-hugo@v2.6.0
@@ -24,7 +27,7 @@ jobs:
       - name: Compile Hugo Static Files
         run: hugo -D --gc --minify
 
-      # - name: 🔐 Secure Content with Encryption
+      #       - name: Secure Content with Encryption
       #   run: curl -L -o hugo-encrypt "https://github.com/Izumiko/hugo-encrypt/releases/download/v0.1.0/hugo-encrypt-linux-64" && chmod 755 hugo-encrypt && ./hugo-encrypt
 
       - name: Publish to GitHub Pages
