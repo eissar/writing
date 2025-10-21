@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       - name: Recursively Update Submodules
-        run: git submodule update --init --recursive
+        run: git submodule update --init --remote --recursive
 
       - name: Initialize Hugo Environment
         uses: peaceiris/actions-hugo@v2.6.0
