@@ -24,7 +24,7 @@ disqusShortname = ""
 
 [params]
   # types of posts to be listed on the home page
-  mainSections = ["post"]
+  mainSections = ["posts"]
 
   # Turn on LaTeX support
 	math = true
