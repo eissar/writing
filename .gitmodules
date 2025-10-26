@@ -1,9 +1,6 @@
 [submodule "themes/noteworthy"]
 	path = themes/noteworthy
 	url = https://github.com/kimcc/hugo-theme-noteworthy/
-[submodule "content/catalog"]
-	path = content/catalog
-	url = https://github.com/eissar/catalog
 [submodule "content/posts"]
 	path = content/posts
 	url = https://github.com/eissar/catalog
