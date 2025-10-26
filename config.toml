@@ -1,6 +1,6 @@
 baseURL = "https://eissar.github.io/writing"
 languageCode = "en-us"
-title = "Noteworthy"
+title = "Catalog"
 theme = "noteworthy"
 # enableRobotsTXT = true
 [pagination]
