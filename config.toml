@@ -30,7 +30,7 @@ disqusShortname = ""
   # Turn on LaTeX support
 	math = true
 	# Blog description at the top of the homepage. Supports markdown.
-	description = "Noteworthy is a minimalist Hugo theme, perfect for writers and bloggers."
+	description = "random pieces of writing from my catalog of notes"
 
     showReadMore = false
 
@@ -42,7 +42,8 @@ disqusShortname = ""
 	# Main
 	# email = "#"
 	#    facebook = "#"
-	   twitter = "#eshaanissar"
+	twitter = "https://x.com/@eshaanissar"
+	github = "https://github.com/eissar"
 	# instagram = "#"
 	# tumblr = "#"
 	# reddit = "#"
@@ -68,7 +69,6 @@ disqusShortname = ""
 	#    soundcloud = "#"
 	#
 	# # Programming
-	   github = "#eissar"
 	# stackoverflow = "#"
 	# gitlab = "#"
 	# codepen = "#"
